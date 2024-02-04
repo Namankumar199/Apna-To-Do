@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apna To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">    
+  </head>
+  <body >
+    <div class="todo-container">
+           <div class="status">
+               <h1>No Status</h1>
+               <button id="add_btn" data-target="#modal1">➕ ADD TODO</button>
+           </div>
+      
+           <div class="status">
+              <h1>Not Started</h1>
+           </div>
+
+           <div class="status">
+               <h1>In Progress</h1>
+           </div>
+           
+           <div class="status">
+              <h1>Completed</h1>
+           </div>
+    </div>
+
+<!--Modal section-->
+        
+  <div class="modal" id="modal1">
+    <div class="header">
+      <div class="title"> List </div>
+      <button class="btn modal-btn" data-target="#modal1">✖️</button>
+    </div>
+    <div class="modal-body">
+      <input id="todo_item" type="text" /><br>
+      <button id="todo_submit" class="additem">Add Task</button>
+    </div>
+  </div>
+
+  <div id="overlay"></div>
+<!-- Modal section end -->
+
+
+  </body>
+  
+  <!-- <script type="text/javascript" src="script1.js"></script> -->
+  <script type="text/javascript" src="script.js"></script>
+</html>
