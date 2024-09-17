@@ -8,28 +8,38 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 0px solid red;
+  background: rgba(139, 137, 203, 1.0);
+  background: conic-gradient(from 135deg, rgba(47, 43, 169, 0.7), rgba(30, 170, 124, 0.7));
 }
 
 .todo-container {
   width: 1000px;
   height: 90vh;
   display: flex;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.3);
   border: 0px solid green;
 }
 
 .status {
   width: 25%;
+  text-align: center;
   background: #b3afaf;
   position: relative;
   padding-top: 60px;
   padding: 60px 1rem 0.5rem;
-  border: 0px solid rgb(12, 12, 12);
+  border: 0px solid rgb(12, 12, 12);  
+  background: rgba(103, 187, 59, 1.0);
+  background: conic-gradient(from 0deg, rgb(55, 157, 148), rgb(12, 101, 161));
 }
+
+
 .status:nth-child(even) {
   background-color: #9d97976b;
 }
 .status h1 {
-  background: #4f4d4d;
+  background: rgba(103, 187, 58, 1.0);
+  background: linear-gradient(270deg, rgb(98, 148, 71), rgb(160, 169, 103));
   color: #f3f3f4;
   position: absolute;
   top: 0;
@@ -98,9 +108,11 @@ body {
 }
 .modal-btn {
   background-color: transparent;
-  /* background-color: rgba(0, 0, 0, 0.1); */
   border: 1px solid rgba(0, 0, 0, 0.2);
   font-size: 1rem;
+}
+.modal-btn:hover{
+  background-color: #dbd7d7;
 }
 .modal {
   width: 350px;
@@ -143,12 +155,19 @@ padding: 0.3rem 0rem;
 }
 
 .modal-body button{
-  background-color: rgb(125, 212, 125);
-   margin-top:10px;
+  background-color: rgb(39, 156, 39);
+ color: #fff;
+  margin-top:10px;
   font-size: 1.2rem;
   font-weight: bold !important;
   width: 100%;
   padding: 0.5rem;
+  cursor: pointer ;
+}
+.modal-body button:hover{
+
+  background-color: rgb(57, 183, 57);
+transition: all 0.3ms;
 }
 #overlay {
   display: none;
